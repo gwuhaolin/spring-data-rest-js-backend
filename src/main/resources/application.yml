@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  data:
+    rest:
+      return-body-on-create: true
+      return-body-on-update: true
+      base-path: /rest
+  h2:
+    console:
+      enabled: true
+debug: true
