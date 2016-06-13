@@ -19,4 +19,10 @@ public class TestCtrl {
     public String index() {
         return "hi";
     }
+
+    @ResponseBody
+    @RequestMapping("errorWithJSON")
+    public void errorWithJSON() {
+        throw new RuntimeException("for errorWithJSON test");
+    }
 }
