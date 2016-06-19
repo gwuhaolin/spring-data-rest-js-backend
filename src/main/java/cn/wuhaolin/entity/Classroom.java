@@ -1,7 +1,6 @@
 package cn.wuhaolin.entity;
 
 import javax.persistence.*;
-import java.util.Set;
 
 @Table
 @Entity
@@ -12,8 +11,4 @@ public class Classroom {
 
     @Column
     public String name;
-
-    @ManyToMany
-    public Set<Student> students;
-
 }

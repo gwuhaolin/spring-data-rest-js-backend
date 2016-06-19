@@ -22,7 +22,7 @@ public class Student {
     @ManyToOne
     public Academy academy;
 
-    @ManyToMany(mappedBy = "students")
+    @OneToMany
     public Set<Classroom> classrooms;
 
 }
